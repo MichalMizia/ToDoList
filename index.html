@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+   
+    <div class="title">
+        <h1>List of stuff to do</h1>
+     </div>
+     
+    <section class="to-do__section">
+
+        <div class="list-of-lists__wrapper">
+            <h2 class="my-lists">My lists</h2>
+            
+            <ul class="list-of-lists" id="toDoLists">
+                <!-- <li class="single-list" id="current-list">Projects</li>
+                <li class="single-list" >Groceries</li>
+                <li class="single-list" >Training</li> -->
+            </ul>
+            <form id="addListForm">
+                <input id="addListInput" class="add-list" type="text" placeholder="Add a list">
+                <button type="submit" class="btn add-btn" data-add-list>+</button>
+            </form>
+        </div>
+
+        <div class="to-do-list__wrapper" id="todos">
+            <div class="upper-text">
+                <h3 class="toDo-list-title" id="toDoTitle"></h3>
+                <span class="tasks-remaining" id="tasksRemaining"></span>
+            </div>
+            
+            <div class="toDo-list">
+
+                <div id="toDoList">
+                    <label class="list-item__container">
+                        <input type="checkbox">
+                        <div class="label">A sample project</div>
+                    </label>
+                    
+                    <label class="list-item__container">
+                        <input type="checkbox">
+                        <div class="label">A sample project</div>
+                    </label>
+                </div>
+                <form action="" id="addTodoForm">
+                    <input id="addTodoInput" type="text" placeholder="Add a new item" class="add-toDo-text">
+                    <button type="submit" class="btn add-toDo">+</button>
+                </form>
+                
+            </div>
+
+           <button class="btn btn-clear" id="clear">Clear completed lists</button>
+           <button class="btn btn-delete-list" id="delete-list">Delete list</button>
+        </div>
+        
+    </section>
+    
+</body>
+</html>
